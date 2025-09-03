@@ -5,16 +5,8 @@ import heroImage from "@/assets/hero-campus.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="University Campus" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/70"></div>
-      </div>
+    <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-subtle">
+      {/* Removed background image */}
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
