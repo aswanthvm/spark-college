@@ -48,6 +48,22 @@ const Login = () => {
               </div>
             </Button>
 
+            {/* Coordinator Login */}
+            <Button
+              onClick={() => navigate("/coordinator-dashboard")}
+              className="w-full h-16 bg-orange-500 hover:bg-orange-600 text-white rounded-xl justify-start px-6 text-left"
+            >
+              <div className="flex items-center space-x-4">
+                <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                  <User className="h-5 w-5" />
+                </div>
+                <div>
+                  <div className="font-semibold">Coordinator Login</div>
+                  <div className="text-sm opacity-90">Manage assigned events</div>
+                </div>
+              </div>
+            </Button>
+
             {/* Admin Login */}
             <Button
               onClick={handleAdminLogin}
